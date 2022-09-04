@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [04/Sep/2022:21:04:11 +0800] "GET /loginServlet HTTP/1.1" 200 12 http-nio-8080-exec-1 2023
+0:0:0:0:0:0:0:1 - - [04/Sep/2022:21:04:50 +0800] "GET /login.html HTTP/1.1" 200 732 http-nio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [04/Sep/2022:21:04:50 +0800] "GET /css/login.css HTTP/1.1" 200 1468 http-nio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [04/Sep/2022:21:04:50 +0800] "GET /imgs/Desert.jpg HTTP/1.1" 200 6664596 http-nio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [04/Sep/2022:21:05:00 +0800] "GET /loginServlet?username=zhangssa&password=123 HTTP/1.1" 200 12 http-nio-8080-exec-5 55
+0:0:0:0:0:0:0:1 - - [04/Sep/2022:21:05:07 +0800] "GET /loginServlet?username=zhangsan&password=123 HTTP/1.1" 200 12 http-nio-8080-exec-6 55
