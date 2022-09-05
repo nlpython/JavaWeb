@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tomcat" />
         <module name="LoginProject" />
+        <module name="jsp" />
         <module name="maven-use" />
         <module name="mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jsp" target="1.7" />
       <module name="LoginProject" target="1.7" />
       <module name="maven-demo" target="16" />
       <module name="maven-use" target="8" />
