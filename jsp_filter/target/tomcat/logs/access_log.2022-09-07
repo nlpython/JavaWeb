@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:00:10:41 +0800] "GET /axios.html HTTP/1.1" 304 - http-nio-8080-exec-10 4
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:00:10:41 +0800] "GET /ajaxServlet?username=zhangsan HTTP/1.1" 200 11 http-nio-8080-exec-1 2
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:00:14:35 +0800] "GET / HTTP/1.1" 200 52 http-nio-8080-exec-1 158
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:00:14:44 +0800] "GET /login.jsp HTTP/1.1" 404 739 http-nio-8080-exec-2 13

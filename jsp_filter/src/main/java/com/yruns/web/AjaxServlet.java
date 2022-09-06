@@ -16,8 +16,12 @@ public class AjaxServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // 接受请求参数
+        String username = request.getParameter("username");
+        System.out.println(username);
+
         // 1.响应数据
-        response.getWriter().write("hello Ajax");
+        response.getWriter().write("hello axios");
 
     }
 

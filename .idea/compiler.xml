@@ -15,6 +15,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jsp_filter" target="1.7" />
+      <module name="jsp_filter (1)" target="1.5" />
       <module name="LoginProject" target="1.7" />
       <module name="maven-demo" target="16" />
       <module name="maven-use" target="8" />

@@ -26,7 +26,7 @@ public class LoginFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         // 判断访问的资源路径是否和登录注册有关
         String[] urls = {"/login.jsp", "/imgs/", "/css/", "/loginServlet",
-                "/register.jsp", "/registerServlet", "/checkCodeServlet"};
+                "/register.jsp", "/registerServlet", "/checkCodeServlet", "/selectUserServlet"};
 
         String url = req.getRequestURL().toString();
         for (String u: urls) {

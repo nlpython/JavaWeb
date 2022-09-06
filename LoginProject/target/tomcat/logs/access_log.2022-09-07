@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:00:15:11 +0800] "GET / HTTP/1.1" 200 926 http-nio-8080-exec-1 207
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:00:15:16 +0800] "POST /loginServlet HTTP/1.1" 302 - http-nio-8080-exec-2 2057
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:00:15:16 +0800] "GET /selectAllServlet HTTP/1.1" 200 6067 http-nio-8080-exec-3 739

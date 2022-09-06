@@ -23,6 +23,7 @@
                     <input name="username" type="text" id="username">
                     <br>
                     <span id="username_err" class="err_msg" >${register_msg}</span>
+                    <span id="username_err_ajax" class="err_msg_ajax" style="display: none">用户名已存在</span>
                 </td>
 
             </tr>
@@ -59,6 +60,39 @@
 <script>
     document.getElementById("changeImg").onclick = function () {
         document.getElementById("checkCodeImg").src = "/checkCodeServlet?"+new Date().getMilliseconds();
+    }
+
+    // 1.为输出框绑定失去焦点事件
+    document.getElementById("username").onblur = function () {
+        // 2.发送Ajax请求
+        // 获取用户名的值
+        var username = this.value;
+
+        //2.1 创建核心对象
+        var xhttp;
+        if (window.XMLHttpRequest) {
+            xhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        //2.2 发送请求
+        xhttp.open("GET", "http://localhost:8080/selectUserServlet?username=" + username);
+        xhttp.send();
+
+        //2.3 获取响应
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // 判断true or false
+                if (this.responseText == "true") {
+                    // 用户名存在，显示提示信息
+                    document.getElementById("username_err_ajax").style.display = '';
+                } else {
+                    // 用户名不存在，清楚提示信息
+                    document.getElementById("username_err_ajax").style.display = 'none';
+                }
+            }
+        };
     }
 
 </script>
