@@ -21,5 +21,6 @@
 <!--        <package name="com.yruns.mapper"/>-->
         <!--加载sql的映射文件-->
         <mapper resource="com/yruns/mapper/UserMapper.xml"/>
+        <mapper resource="com/yruns/mapper/BrandMapper.xml"/>
     </mappers>
 </configuration>

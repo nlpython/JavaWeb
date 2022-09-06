@@ -10,7 +10,7 @@
 <div class="form-div">
     <div class="reg-content">
         <h1>欢迎注册</h1>
-        <span>已有帐号？</span> <a href="login.html">登录</a>
+        <span>已有帐号？</span> <a href="login.jsp">登录</a>
     </div>
     <form id="reg-form" action="/registerServlet" method="post">
 
@@ -21,7 +21,7 @@
                 <td class="inputs">
                     <input name="username" type="text" id="username">
                     <br>
-                    <span id="username_err" class="err_msg" style="display: none">用户名不太受欢迎</span>
+                    <span id="username_err" class="err_msg" >${register_msg}</span>
                 </td>
 
             </tr>
@@ -36,6 +36,15 @@
             </tr>
 
 
+            <tr>
+                <td>验证码</td>
+                <td class="inputs">
+                    <input name="checkCode" type="text" id="checkCode">
+                    <img id="checkCodeImg" src="/checkCodeServlet">
+                    <a href="#" id="changeImg" >看不清？</a>
+                </td>
+            </tr>
+
         </table>
 
         <div class="buttons">
@@ -45,5 +54,12 @@
     </form>
 
 </div>
+
+<script>
+    document.getElementById("changeImg").onclick = function () {
+        document.getElementById("checkCodeImg").src = "/checkCodeServlet?"+new Date().getMilliseconds();
+    }
+
+</script>
 </body>
 </html>

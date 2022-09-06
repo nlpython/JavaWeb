@@ -21,3 +21,7 @@
 0:0:0:0:0:0:0:1 - - [05/Sep/2022:20:56:54 +0800] "GET /BServlet HTTP/1.1" 200 - http-nio-8080-exec-2 3
 0:0:0:0:0:0:0:1 - - [05/Sep/2022:20:57:32 +0800] "GET /AServlet HTTP/1.1" 200 - http-nio-8080-exec-1 32
 0:0:0:0:0:0:0:1 - - [05/Sep/2022:20:57:45 +0800] "GET /BServlet HTTP/1.1" 200 - http-nio-8080-exec-2 2
+0:0:0:0:0:0:0:1 - - [05/Sep/2022:20:58:11 +0800] "GET /AServlet HTTP/1.1" 200 - http-nio-8080-exec-1 31
+0:0:0:0:0:0:0:1 - - [05/Sep/2022:20:58:19 +0800] "GET /aSession HTTP/1.1" 200 - http-nio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [05/Sep/2022:20:58:28 +0800] "GET /bSession HTTP/1.1" 200 - http-nio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [05/Sep/2022:21:48:36 +0800] "GET /favicon.ico HTTP/1.1" 404 762 http-nio-8080-exec-6 5

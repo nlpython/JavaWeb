@@ -1,1 +1,8 @@
+com\yruns\service\UserService.class
 com\yruns\web\LoginServlet.class
+com\yruns\web\SelectAllServlet.class
+com\yruns\pojo\Brand.class
+com\yruns\mapper\BrandMapper.class
+com\yruns\service\BrandService.class
+com\yruns\web\CheckCodeServlet.class
+com\yruns\web\filter\LoginFilter.class
